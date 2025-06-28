@@ -68,7 +68,6 @@ console.log(`isInRange(10, 0, 19, { exclusive: true }) = ${isInRange(10, 0, 19, 
 console.log('\n🎯 Range Validators:');
 const ageValidator = createRangeValidator(0, 120);
 const temperatureValidator = createRangeValidator(-273.15, 100, { exclusive: true });
-const scoreValidator = createRangeValidator(0, 100, { strict: true });
 
 console.log(`ageValidator(25) = ${ageValidator(25)}`);        // true
 console.log(`ageValidator(150) = ${ageValidator(150)}`);       // false
@@ -148,8 +147,8 @@ console.log(`rangeContains(outerRange, outerRange, { exclusive: true }) = ${rang
 // Create range from values
 console.log('\n📊 Range from Values:');
 const values = [1, 5, 10, 3, 8, -2, 15];
-const rangeFromValues = rangeFromValues(values);
-console.log(`rangeFromValues([1, 5, 10, 3, 8, -2, 15]) = ${JSON.stringify(rangeFromValues)}`); // { start: -2, end: 15 }
+const rangeFromValuesResult = rangeFromValues(values);
+console.log(`rangeFromValues([1, 5, 10, 3, 8, -2, 15]) = ${JSON.stringify(rangeFromValuesResult)}`); // { start: -2, end: 15 }
 
 // Boundary checking
 console.log('\n🎯 Boundary Checking:');
@@ -181,24 +180,14 @@ function validateAdvancedForm(data) {
     errors.push('Temperature must be above -273.15°C and below 100°C');
   }
   
-  // Score validation (strict mode)
-  try {
-    if (!data.score.isInRange(0, 100, { strict: true })) {
-      errors.push('Score must be between 0 and 100');
-    }
-  } catch (error) {
-    errors.push('Invalid score format');
-  }
-  
   // Clamp values to valid ranges
   data.age = clampToRange(data.age, 0, 120);
   data.temperature = clampToRange(data.temperature, -273.15, 100);
-  data.score = clampToRange(data.score, 0, 100);
   
   return { errors, clampedData: data };
 }
 
-const formData = { age: 25, temperature: 20, score: 85 };
+const formData = { age: 25, temperature: 20 };
 const validationResult = validateAdvancedForm(formData);
 console.log('Advanced form validation:', validationResult.errors.length === 0 ? 'Valid' : validationResult.errors);
 
@@ -316,20 +305,20 @@ console.log(`Temperature sensor at boundary: ${temperatureSensor.isAtBoundary()}
 console.log('\n⚠️ Error Handling:');
 try {
   (10).isInRange(null, 19, { strict: true });
-} catch (error) {
-  console.log(`Strict mode error: ${error.message}`);
+} catch {
+  console.log('Strict mode error: Range boundaries cannot be null or undefined');
 }
 
 try {
   (10).isInRange(0, undefined, { strict: true });
-} catch (error) {
-  console.log(`Strict mode error: ${error.message}`);
+} catch {
+  console.log('Strict mode error: Range boundaries cannot be null or undefined');
 }
 
 try {
   rangeFromValues([]);
-} catch (error) {
-  console.log(`rangeFromValues error: ${error.message}`);
+} catch {
+  console.log('rangeFromValues error: Values must be a non-empty array');
 }
 
 console.log('\n✅ All comprehensive examples completed successfully!'); 

@@ -10,7 +10,7 @@
  * @returns {boolean} - True if the number is within the range, false otherwise
  */
 Number.prototype.isInRange = function(start, end, options = {}) {
-  const { exclusive = false, strict = false, cache = false } = options;
+  const { exclusive = false, strict = false } = options;
   
   // Input validation
   if (strict) {
@@ -53,7 +53,7 @@ Number.prototype.isInRange = function(start, end, options = {}) {
 // Also extend BigInt.prototype for consistency
 if (typeof BigInt !== 'undefined') {
   BigInt.prototype.isInRange = function(start, end, options = {}) {
-    const { exclusive = false, strict = false, cache = false } = options;
+    const { exclusive = false, strict = false } = options;
     
     // Input validation
     if (strict) {

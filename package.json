@@ -9,8 +9,8 @@
     "test:coverage": "node test.js --coverage",
     "test:watch": "node test.js --watch",
     "validate": "npm run lint && npm test",
-    "lint": "echo 'Linting passed'",
-    "lint:fix": "echo 'Linting fixes applied'",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format": "echo 'Code formatting applied'",
     "format:check": "echo 'Code formatting check passed'",
     "security": "npm audit --audit-level moderate",
@@ -122,9 +122,11 @@
     "lib": ".",
     "test": "."
   },
-  "devDependencies": {},
-  "peerDependencies": {},
-  "optionalDependencies": {},
+  "devDependencies": {
+    "@eslint/js": "9.30.0",
+    "eslint": "9.30.0",
+    "globals": "16.2.0"
+  },
   "bundleDependencies": [],
   "deprecated": false,
   "preferGlobal": false,
