@@ -5,12 +5,9 @@ module.exports = [
   js.configs.recommended,
   {
     languageOptions: {
-      ecmaVersion: 2021,
+      ecmaVersion: 2020,
       sourceType: 'module',
-      globals: {
-        ...globals.node,
-        ...globals.es2021
-      }
+      globals: Object.assign({}, globals.node, globals.es2020)
     },
     rules: {
       'indent': ['error', 2],
