@@ -495,4 +495,95 @@ See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes.
 [![npm](https://img.shields.io/npm/v/number-is-in-range.svg)](https://www.npmjs.com/package/number-is-in-range)
 [![GitHub stars](https://img.shields.io/github/stars/Priyanshujindal/number-is-in-range.svg)](https://github.com/Priyanshujindal/number-is-in-range/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/Priyanshujindal/number-is-in-range.svg)](https://github.com/Priyanshujindal/number-is-in-range/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/Priyanshujindal/number-is-in-range.svg)](https://github.com/Priyanshujindal/number-is-in-range/pulls) 
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/Priyanshujindal/number-is-in-range.svg)](https://github.com/Priyanshujindal/number-is-in-range/pulls)
+
+# number-is-in-range Example Usage
+
+This directory contains comprehensive examples showing how to use the `number-is-in-range` npm package in real-world scenarios.
+
+## Quick Start
+
+1. **Install the package:**
+   ```bash
+   npm install number-is-in-range
+   ```
+
+2. **Run examples:**
+   ```bash
+   # Install dependencies
+   npm install
+   
+   # Run all examples
+   npm run all
+   
+   # Or run individual examples
+   npm run basic      # Basic range checking
+   npm run advanced   # Advanced features
+   npm run validation # Form validation
+   npm run game       # Game development
+   npm run form       # Form validation with UI
+   ```
+
+## Examples Included
+
+### 1. Basic Example (`basic-example.js`)
+- Simple range checking with numbers
+- Bidirectional ranges
+- Floating point numbers
+- BigInt support
+
+### 2. Advanced Example (`advanced-example.js`)
+- Exclusive ranges
+- Range operations (intersection, union)
+- Distance calculations
+- Range analysis
+
+### 3. Validation Example (`validation-example.js`)
+- Form validation scenarios
+- Age validation
+- Score validation
+- Custom validators
+
+### 4. Game Development Example (`game-example.js`)
+- Player health system
+- Score boundaries
+- Level progression
+- Inventory management
+
+### 5. Form Validation Example (`form-validation-example.js`)
+- Real-world form validation
+- Input sanitization
+- Error handling
+- User feedback
+
+## Installation
+
+```bash
+# Clone or download this example
+git clone <repository-url>
+cd example-usage
+
+# Install the number-is-in-range package
+npm install number-is-in-range
+
+# Run examples
+npm start
+```
+
+## Package Features Demonstrated
+
+- ✅ Basic range checking
+- ✅ Bidirectional ranges
+- ✅ Exclusive ranges
+- ✅ BigInt support
+- ✅ Range operations
+- ✅ Distance calculations
+- ✅ Form validation
+- ✅ Game development
+- ✅ Performance optimization
+
+## Learn More
+
+- [Package Documentation](https://www.npmjs.com/package/number-is-in-range)
+- [GitHub Repository](https://github.com/Priyanshujindal/number-is-in-range)
+- [Full API Reference](https://github.com/Priyanshujindal/number-is-in-range#readme) 
