@@ -1,0 +1,125 @@
+# Robots.txt for number-is-in-range npm package
+# This file helps search engines understand how to crawl the repository
+
+User-agent: *
+Allow: /
+
+# Allow crawling of important documentation files
+Allow: /README.md
+Allow: /CHANGELOG.md
+Allow: /CONTRIBUTING.md
+Allow: /SECURITY.md
+Allow: /LICENSE
+Allow: /example.js
+Allow: /test.js
+Allow: /index.js
+Allow: /index.d.ts
+Allow: /package.json
+
+# Allow crawling of GitHub-specific pages
+Allow: /issues
+Allow: /pulls
+Allow: /releases
+Allow: /network
+Allow: /stargazers
+Allow: /forks
+Allow: /discussions
+
+# Allow crawling of GitHub templates
+Allow: /.github/ISSUE_TEMPLATE/
+Allow: /.github/pull_request_template.md
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://github.com/Priyanshujindal/number-is-in-range/sitemap.xml
+
+# Additional sitemaps
+Sitemap: https://www.npmjs.com/package/number-is-in-range
+
+# Specific rules for different user agents
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Block access to sensitive files
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /.env.local
+Disallow: /.env.production
+Disallow: /.env.development
+Disallow: /coverage/
+Disallow: /.nyc_output/
+Disallow: /dist/
+Disallow: /build/
+Disallow: /.cache/
+Disallow: /tmp/
+Disallow: /temp/
+
+# Block access to development files
+Disallow: /.vscode/
+Disallow: /.idea/
+Disallow: /.DS_Store
+Disallow: /Thumbs.db
+Disallow: /desktop.ini
+
+# Block access to log files
+Disallow: /*.log
+Disallow: /logs/
+Disallow: /log/
+
+# Block access to backup files
+Disallow: /*.bak
+Disallow: /*.backup
+Disallow: /*.old
+Disallow: /*.orig
+
+# Allow access to package files
+Allow: /*.js
+Allow: /*.ts
+Allow: /*.d.ts
+Allow: /*.json
+Allow: /*.md
+Allow: /*.txt
+Allow: /*.xml
+Allow: /*.yml
+Allow: /*.yaml
+
+# Specific allow rules for important content
+Allow: /README.md
+Allow: /CHANGELOG.md
+Allow: /CONTRIBUTING.md
+Allow: /SECURITY.md
+Allow: /LICENSE
+Allow: /package.json
+Allow: /index.js
+Allow: /index.d.ts
+Allow: /example.js
+Allow: /test.js
+
+# GitHub-specific allows
+Allow: /blob/main/
+Allow: /tree/main/
+Allow: /commits/
+Allow: /branches/
+Allow: /tags/
+
+# Rate limiting for all bots
+Crawl-delay: 1
+
+# Host directive
+Host: https://github.com/Priyanshujindal/number-is-in-range 

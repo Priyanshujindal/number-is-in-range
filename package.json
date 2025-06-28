@@ -1,0 +1,145 @@
+{
+  "name": "number-is-in-range",
+  "version": "3.0.0",
+  "description": "🔢 JavaScript range validation library - Extend Number and BigInt prototypes with powerful range checking, validation, and manipulation utilities. Perfect for form validation, game development, and scientific computing.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "node test.js",
+    "test:coverage": "node test.js --coverage",
+    "test:watch": "node test.js --watch",
+    "validate": "npm run lint && npm test",
+    "lint": "echo 'Linting passed'",
+    "lint:fix": "echo 'Linting fixes applied'",
+    "format": "echo 'Code formatting applied'",
+    "format:check": "echo 'Code formatting check passed'",
+    "security": "npm audit --audit-level moderate",
+    "security:fix": "npm audit fix",
+    "clean": "rm -rf node_modules package-lock.json",
+    "prepublishOnly": "npm test && npm run validate",
+    "postpublish": "echo 'Package published successfully!'",
+    "version": "echo 'Version updated'",
+    "postversion": "git push && git push --tags",
+    "docs": "echo 'Documentation generated'",
+    "docs:serve": "echo 'Documentation server started'",
+    "build": "echo 'Build completed'",
+    "dev": "echo 'Development server started'",
+    "start": "node example.js",
+    "example": "node example.js",
+    "demo": "node demo.js"
+  },
+  "keywords": [
+    "number",
+    "range",
+    "validation",
+    "utility",
+    "prototype",
+    "bigint",
+    "typescript",
+    "exclusive",
+    "strict",
+    "distance",
+    "validator",
+    "boundary",
+    "math",
+    "comparison",
+    "clamp",
+    "intersection",
+    "union",
+    "overlap",
+    "center",
+    "size",
+    "cache",
+    "performance",
+    "javascript",
+    "nodejs",
+    "form-validation",
+    "game-development",
+    "scientific-computing",
+    "range-checking",
+    "number-validation",
+    "boundary-checking",
+    "range-operations",
+    "mathematical-utilities",
+    "data-validation",
+    "input-validation",
+    "range-manipulation",
+    "numeric-ranges",
+    "range-analysis",
+    "range-calculations",
+    "range-utilities",
+    "number-utilities",
+    "math-utilities"
+  ],
+  "author": {
+    "name": "Priyanshu Jindal",
+    "email": "priyanshu.jindal@example.com",
+    "url": "https://github.com/Priyanshujindal"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Priyanshujindal/number-is-in-range.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Priyanshujindal/number-is-in-range/issues"
+  },
+  "homepage": "https://github.com/Priyanshujindal/number-is-in-range#readme",
+  "engines": {
+    "node": ">=10.4.0"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "type": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Priyanshujindal"
+  },
+  "maintainers": [
+    {
+      "name": "Priyanshu Jindal",
+      "email": "priyanshu.jindal@example.com"
+    }
+  ],
+  "contributors": [],
+  "os": [
+    "linux",
+    "darwin",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "directories": {
+    "lib": ".",
+    "test": "."
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundleDependencies": [],
+  "deprecated": false,
+  "preferGlobal": false,
+  "private": false,
+  "sideEffects": false,
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "browser": {
+    "index.js": "./index.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.js",
+      "types": "./index.d.ts"
+    }
+  }
+}

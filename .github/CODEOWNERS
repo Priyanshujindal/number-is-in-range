@@ -1,0 +1,53 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @Priyanshujindal will be requested for review when someone opens a pull request.
+
+* @Priyanshujindal
+
+# JavaScript files
+*.js @Priyanshujindal
+
+# TypeScript declaration files
+*.d.ts @Priyanshujindal
+
+# Package configuration
+package.json @Priyanshujindal
+package-lock.json @Priyanshujindal
+.npmrc @Priyanshujindal
+
+# Documentation
+README.md @Priyanshujindal
+CHANGELOG.md @Priyanshujindal
+CONTRIBUTING.md @Priyanshujindal
+SECURITY.md @Priyanshujindal
+*.md @Priyanshujindal
+
+# GitHub configuration
+.github/ @Priyanshujindal
+
+# Configuration files
+.editorconfig @Priyanshujindal
+.gitattributes @Priyanshujindal
+.gitignore @Priyanshujindal
+
+# Tests
+test.js @Priyanshujindal
+*.test.js @Priyanshujindal
+*.spec.js @Priyanshujindal
+
+# Examples
+example.js @Priyanshujindal
+demo.js @Priyanshujindal
+
+# Build and CI
+.github/workflows/ @Priyanshujindal
+.github/ISSUE_TEMPLATE/ @Priyanshujindal
+.github/PULL_REQUEST_TEMPLATE.md @Priyanshujindal
+
+# Security
+SECURITY.md @Priyanshujindal
+.github/SECURITY.md @Priyanshujindal
+
+# Dependencies
+dependabot.yml @Priyanshujindal
+.github/dependabot.yml @Priyanshujindal 

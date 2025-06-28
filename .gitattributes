@@ -1,0 +1,147 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# JavaScript files
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+
+# JSON files
+*.json text eol=lf
+
+# Markdown files
+*.md text eol=lf
+
+# Documentation files
+*.txt text eol=lf
+*.rst text eol=lf
+
+# Configuration files
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.conf text eol=lf
+*.config text eol=lf
+
+# Package files
+package.json text eol=lf
+package-lock.json text eol=lf
+npm-shrinkwrap.json text eol=lf
+
+# License files
+LICENSE text eol=lf
+LICENSE.txt text eol=lf
+
+# Git files
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# GitHub files
+.github/** text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Windows batch files
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text eol=lf
+*.pdf binary
+*.zip binary
+*.tar.gz binary
+*.rar binary
+*.7z binary
+
+# Archive files
+*.tgz binary
+*.tar binary
+
+# Executable files
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+
+# Font files
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+
+# Audio files
+*.mp3 binary
+*.wav binary
+*.ogg binary
+*.flac binary
+
+# Video files
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.wmv binary
+*.flv binary
+*.webm binary
+
+# Database files
+*.db binary
+*.sqlite binary
+*.sqlite3 binary
+
+# Log files
+*.log text eol=lf
+
+# Temporary files
+*.tmp text eol=lf
+*.temp text eol=lf
+
+# Backup files
+*.bak text eol=lf
+*.backup text eol=lf
+*.old text eol=lf
+*.orig text eol=lf
+
+# IDE files
+.vscode/** text eol=lf
+.idea/** text eol=lf
+*.sublime-project text eol=lf
+*.sublime-workspace text eol=lf
+
+# OS files
+.DS_Store binary
+Thumbs.db binary
+desktop.ini text eol=crlf
+
+# Node.js files
+node_modules/** -text
+.npm/** -text
+.npmrc text eol=lf
+
+# Build files
+dist/** -text
+build/** -text
+coverage/** -text
+.nyc_output/** -text
+
+# Cache files
+.cache/** -text
+.tmp/** -text
+.temp/** -text
+
+# Environment files
+.env* text eol=lf
+
+# Docker files
+Dockerfile text eol=lf
+docker-compose*.yml text eol=lf
+.dockerignore text eol=lf 
