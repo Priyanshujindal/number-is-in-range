@@ -123,8 +123,7 @@
     "test": "."
   },
   "devDependencies": {
-    "@eslint/js": "9.30.0",
-    "eslint": "9.30.0"
+    "eslint": "8.57.1"
   },
   "bundleDependencies": [],
   "deprecated": false,
