@@ -1,5 +1,4 @@
 const js = require('@eslint/js');
-const globals = require('globals');
 
 module.exports = [
   js.configs.recommended,
@@ -7,7 +6,17 @@ module.exports = [
     languageOptions: {
       ecmaVersion: 2020,
       sourceType: 'module',
-      globals: Object.assign({}, globals.node, globals.es2020)
+      globals: {
+        console: 'readonly',
+        process: 'readonly',
+        Buffer: 'readonly',
+        __dirname: 'readonly',
+        __filename: 'readonly',
+        global: 'readonly',
+        module: 'readonly',
+        require: 'readonly',
+        exports: 'readonly'
+      }
     },
     rules: {
       'indent': ['error', 2],
