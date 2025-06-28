@@ -23,6 +23,10 @@ module.exports = {
   ignorePatterns: [
     'node_modules/',
     '.npm-cache/',
-    '*.min.js'
+    '*.min.js',
+    'example-usage/',
+    'example.js',
+    'demo.js',
+    'test.js'
   ]
 }; 
