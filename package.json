@@ -86,7 +86,7 @@
   },
   "homepage": "https://github.com/Priyanshujindal/number-is-in-range#readme",
   "engines": {
-    "node": ">=10.4.0"
+    "node": ">=16.0.0"
   },
   "files": [
     "index.js",
