@@ -477,6 +477,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes.
 
+## 👨‍💻 Author
+
+**Priyanshu Jindal**
+
+- GitHub: [@Priyanshujindal](https://github.com/Priyanshujindal)
+- LinkedIn: [Priyanshu Jindal](https://www.linkedin.com/in/priyanshu-jindal-tech)
+
+## 📈 Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes.
+
 ---
 
 **Made with ❤️ for the JavaScript community**
